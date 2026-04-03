@@ -104,7 +104,7 @@ function buildAreaSeries(records: RecordItem[]) {
 		}));
 }
 
-const chartVars: CSSProperties = {
+const chartVars: CSSProperties & Record<string, string> = {
 	"--income": "142 71% 45%",
 	"--expense": "0 84% 60%",
 	"--muted-foreground": "215 16% 70%",

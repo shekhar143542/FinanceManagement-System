@@ -282,7 +282,6 @@ The summary endpoint calculates:
 ## Test Credentials
 - admin@test.com / 123456
 - analyst@test.com / 123456
-- viewer@test.com / 123456
 
 ## Project Structure
 ```
@@ -321,12 +320,3 @@ src/
 - Signup always assigns `VIEWER` to prevent privilege escalation.
 - Authorization is enforced in backend routes, not just UI.
 
-## Limitations
-- No JWT or server-side session storage.
-- Client-side route protection and cookie-based identity are not production-grade.
-- No pagination or rate limiting on list endpoints.
-
-## Future Improvements
-- Add password hashing and JWT or session storage
-- Enforce server-side session validation and role checks with tokens
-- Add pagination, sorting, and search for records
